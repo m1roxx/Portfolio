@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .split-background {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-side {
+            flex: 1;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .nav-menu {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #555;
+        }
+
+        .left-side h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: black;
+            text-align: center;
+        }
+
+        .right-side {
+            flex: 1;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .hobby {
+            margin-bottom: 20px;
+            text-align: center;
+            width: 80%; 
+        }
+
+        .hobby h2 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .hobby-content {
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+        }
+
+        .hobby img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px; 
+            align-self: flex-start; 
+        }
+
+        .hobby p {
+            font-size: large;
+            margin: 0;
+            text-align: left;
+        }
+
+        .hobby-programming {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="split-background">
+        <div class="left-side">
+            <div class="nav-menu">
+                <a href="home.html" class="nav-link">Home</a>
+            </div>
+            <h1>Hobbies</h1>
+        </div>
+        <div class="right-side">
+            <div class="hobby">
+                <h2>Chess</h2>
+                <div class="hobby-content">
+                    <img src="images/chess.png" alt="Chess">
+                    <p>Chess is one of my favorite hobbies. It helps me to escape from everyday tasks. My best achievement in this game is winning the regional tournament.</p>
+                </div>
+            </div>
+            <div class="hobby">
+                <h2>Programming</h2>
+                <div class="hobby-content">
+                    <img src="images/programming.png" alt="Programming">
+                    <p>Programming is more of a hobby than a job for me. I started doing it when I was 16. Now I am focused on cross-platform mobile development (Flutter) and it really brings me pleasure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
